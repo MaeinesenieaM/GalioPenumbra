@@ -1,0 +1,35 @@
+{
+  "id": "galio-penumbra",
+  "title": "Galio",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "description": "<p>GALIO TA DE VOLTA! VAMOOOOOOOOOOO!</p>",
+  "authors": [
+    {
+      "name": "Dominick",
+      "discord": "GROS",
+      "flags": {}
+    },
+    {
+      "name": "Maeine",
+      "email": "david.costa.gomes71@gmail.com",
+      "discord": "MaeinesenieaM",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  }
+}
