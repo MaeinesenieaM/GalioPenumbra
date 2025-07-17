@@ -1,12 +1,12 @@
 {
   "id": "galio-penumbra",
   "title": "Galio",
-  "version": "0.0.5",
+  "version": "0.0.3",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
   },
-  "description": "<p>GALIO TA DE VOLTA! VAMOOOOOOOOOOO!</p>",
+  "description": "<p>Galio agora tem modulo agora!</p>",
   "authors": [
     {
       "name": "Dominick",
