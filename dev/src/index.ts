@@ -1,31 +1,27 @@
-console.log("WOAH!");
-
 interface ContextMenuEntry {
+	name: string;
+	callback: (target: HTMLElement | typeof jQuery) => void;
+	condition?: boolean;
     classes?: string;
-    condition?: (li: JQuery<HTMLElement>) => boolean;
-    callback: (li: JQuery<HTMLElement>) => void;
     group?: string;
     icon?: string;
-    name: string;
 }
+
+type GetCompendiumContextOptionsHook = (
+	application: foundry.applications.sidebar.tabs.CompendiumDirectory, 
+	menuItems: ContextMenuEntry[]
+) => void;
 
 foundry.helpers.Hooks.on("getCompendiumContextOptions", (
-	app: any, 
-	html: any) => { 
+	application: any,
+    menuItems: any
+) => {
+	//This is here so the developer can use typing.
+    const typed_app = application as foundry.applications.sidebar.tabs.CompendiumDirectory;
+    const typed_items = menuItems as ContextMenuEntry[];
 
-	console.log(app); console.log(html);
-	console.log("CONTEXT")
-}
-);
-
-foundry.helpers.Hooks.on("renderCompendiumDirectory", (
-	app: any, 
-	html: any) => { 
-
-	console.log(app); console.log(html);
-	console.log("RENDER")
-}
-);
-
-
-console.log(Hooks)
+    typed_items.push({
+    	name: "ExportJavaScript",
+    	callback: (target) => { console.log("YES! YES!          KILL!")}
+    })
+});
