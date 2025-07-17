@@ -32,7 +32,7 @@
       }
     ]
   },
-  "scripts": ["./script/index.js"],
+  "scripts": ["script/index.js"],
   "manifest": "https://raw.githubusercontent.com/MaeinesenieaM/GalioPenumbra/main/module.json",
   "download": "https://github.com/MaeinesenieaM/GalioPenumbra/archive/refs/heads/main.zip",
   "url": "https://github.com/MaeinesenieaM/GalioPenumbra"
