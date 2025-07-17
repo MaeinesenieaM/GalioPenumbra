@@ -1,13 +1,10 @@
 "use strict";
-console.log("WOAH!");
-foundry.helpers.Hooks.on("getCompendiumContextOptions", (app, html) => {
-    console.log(app);
-    console.log(html);
-    console.log("CONTEXT");
+foundry.helpers.Hooks.on("getCompendiumContextOptions", (application, menuItems) => {
+    //This is here so the developer can use typing.
+    const typed_app = application;
+    const typed_items = menuItems;
+    typed_items.push({
+        name: "ExportJavaScript",
+        callback: (target) => { console.log("YES! YES!          KILL!"); }
+    });
 });
-foundry.helpers.Hooks.on("renderCompendiumDirectory", (app, html) => {
-    console.log(app);
-    console.log(html);
-    console.log("RENDER");
-});
-console.log(Hooks);
